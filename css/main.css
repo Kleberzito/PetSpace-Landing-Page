@@ -1,0 +1,328 @@
+/* Rese CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    line-height: 1.4;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button, input {
+    border: none;
+    outline: none;
+    background: none;
+    font-family: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+:root {
+    --cor-primaria: #FF6B6B;
+    --cor-secundaria: #FFD166;
+    --cor-fundo: #B99984;
+    --cor-fundo-secundario: #F2F0F1;
+    --cor-texto-principal: #333333;
+    --cor-texto-secundario: #555555;
+    --cor-texto-default: #fff;
+    --cor-complementar: #06D6A0;
+    --cor-complementar-secundaria: #FF6B6B;
+
+    --default-height: 1920px;
+}
+
+/* Inicio aplicacao de estilo CSS*/
+body {
+
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: fixed;    
+    top: 0;
+    left: 0;
+    width: 100%; 
+    background-color: var(--cor-fundo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 220px; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+    z-index: 1000;        
+}
+
+.img-details{
+    border: solid 1px #eee;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.logo {
+    margin-left: 220px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--cor-texto-principal);
+}
+nav {
+    flex: 1;
+    text-align: center;
+}
+nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: var(--cor-texto-principal);
+    font-weight: 500;
+}
+.actions {
+    margin-right: 220px;
+}
+.btn {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-default);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+.btn-login i {
+    font-style: normal;
+    font-size: 1.2em;
+}
+
+/* Sessão hero */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: var(--default-width);
+    height: 829px;
+    padding: 0 220px;
+    background-color: var(--cor-fundo-secundario);
+}
+
+.hero-text {
+    width: auto;
+    height: 361px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-text h1 {
+    width: 100%;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: var(--cor-texto-principal);
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    color: var(--cor-texto-secundario);
+}
+
+.hero-text .btn {    
+    width: fit-content;
+}
+
+.hero-image img {
+    width: 824px;
+    height: 549px;
+    object-fit: cover;    
+}
+
+/*sessao secundaria */
+.sessao-secundaria {
+    height: var(--default-width);
+    padding: 0 220px;
+    background-color: var(--cor-fundo)
+}
+
+/* Bloco Gerenciamento */
+.bloco-calendar {    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    height: 547px;
+}
+
+.texto-calendar {
+    width: 672px;
+}
+
+.texto-calendar h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: var(--cor-texto-principal);
+}
+
+.texto-calendar p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: var(--cor-texto-secundario);
+}
+
+.texto-calendar .btn {
+    padding: 15px 30px;
+}
+
+.imagem-calendar img {
+    width: 748px;
+    height: auto;
+    margin-right: 200px;
+    object-fit: cover;
+}
+
+/* Bloco Work Together */
+.bloco-work {
+    display: flex;                
+    justify-content: space-between;
+    align-items: center; 
+    margin: 0 auto;  
+    padding-top: 50px;
+    height: 661px;             
+    gap: 40px;
+}
+
+.texto-work {
+    flex: 1;                      
+    max-width: 672px;  
+}
+
+.texto-work h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: var(--cor-texto-principal);
+}
+
+.texto-work p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: var(--cor-texto-secundario);
+}
+
+.texto-work .btn {
+    padding: 12px 25px;
+}
+
+
+/* Sessão planos */
+.planos-section {
+    height: auto;
+    padding: 0 220px 10px;    
+    box-sizing: border-box;
+    background-color: var(--cor-fundo-secundario);
+    text-align: center;
+}
+
+.planos-section h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.planos-section p {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+}
+
+.planos-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; 
+}
+
+.plano {
+    width: 390px;
+    background: var(--cor-fundo-secundario);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 40px 0;
+    text-align: center;
+}
+
+.plano h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.plano p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.plano .preco {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.plano ul {
+    list-style: none;
+    padding: 0;
+}
+
+.plano ul li {
+    margin: 10px 0;
+}
+
+.plano.gratis,
+.plano.premium {
+    height: auto;
+}
+
+.plano.pro {
+    height: 461px; 
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto-default);
+}
+
+/* final da pagina (Footer)*/
+footer {
+    background-color: var(--cor-fundo);
+    padding: 40px 220px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--cor-texto-principal);
+}
+
+.footer-nav {
+    margin: 20px 0;
+}
+
+.footer-nav a {
+    margin: 0 10px;
+    color: var(--cor-texto-principal);
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.social a {
+    margin: 0 8px;
+}

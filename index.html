@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PetSpace - Landing Page">
+    <title>PetSpace - Landing Page</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/carrossel.css">
+</head>
+<body>
+    <header>
+        <div class="logo">PetSpace</div>
+
+        <nav>
+            <a href="#hero">Início</a>
+            <a href="#consultas">Consultas</a>
+            <a href="#equipe">Equipe</a>
+            <a href="#planos">Planos</a>
+        </nav>
+        
+        <div class="actions">
+            <a href="#" class="btn">
+                Login <p>👤</p>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-text">
+                <h1>Mais cuidado e amor para seu pet</h1>
+                <p>Organize consultas, vacinas e momentos especiais com facilidade.</p>
+                <a href="#" class="btn">Experimente grátis</a>
+            </div>
+            <div class="hero-image img-details">
+                <img src="img/main_pet.png" alt="Imagem de pet feliz">
+            </div>
+        </section>
+
+        <section id="consultas" class="sessao-secundaria">        
+            <div class="bloco-calendar">
+                <div class="texto-calendar">
+                <h1>Organize a Vida do Seu Pet</h1>
+                <p>Gerencie consultas, vacinas e atividades do seu pet de forma simples e organizada.</p>
+                <a href="#" class="btn">Começar</a>
+                </div>
+                
+                <div class="imagem-calendar">
+                    <img src="img/calendar_pet.jpg" alt="Gestão de pets">
+                </div>
+            </div>
+
+            <div id="equipe" class="bloco-work">
+                <div class="wrapper">
+                    <div class="item active"><img src="img/work_1.png" alt="Imagem de funcionario"><p>Carlos</p></div>
+                    <div class="item"><img src="img/work_2.png" alt="Imagem de funcionario"><p>Mariana</p></div>
+                    <div class="item"><img src="img/work_3.png" alt="Imagem de funcionario"><p>João</p></div>
+                    <div class="item"><img src="img/work_4.png" alt="Imagem de funcionario"><p>Lucas</p></div>
+                    <div class="item"><img src="img/work_5.png" alt="Imagem de funcionario"><p>Tatiana</p></div>
+                    <div class="item"><img src="img/work_6.png" alt="Imagem de funcionario"><p>Emily</p></div>
+                    
+                    <svg viewBox="0 0 300 300">
+                        <circle id="holder" cx="151" cy="151" r="150" fill="none" stroke="none"/>
+                    </svg>
+                </div>
+
+                <div class="texto-work">
+                    <h1>Equipe Veterinária Sempre ao Seu Lado</h1>
+                    <p>Compartilhe informações do seu pet com familiares e nossa equipe de veterinários, garantindo acompanhamento em tempo real e cuidado especializado sempre disponível.</p>
+                    <a href="#" class="btn">Experimentar agora</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="planos" class="planos-section">
+            <div class="conteudo">
+                <h2>Escolha seu plano</h2>
+                <p>Selecione o plano ideal para cuidar do seu pet com suporte veterinário dedicado e benefícios exclusivos.</p>
+            </div>
+
+            <div class="planos-container">
+                <div class="plano gratis">
+                    <h3>Plano Grátis</h3>
+                    <p>Ideal para começar</p>
+                    <p class="preco">R$0/mês</p>
+                    <ul>
+                        <li>Acesso básico</li>
+                        <li>Compartilhamento limitado</li>
+                        <li>Suporte inicial</li>
+                    </ul>
+                <a href="#" class="btn">Contratar</a>
+                </div>
+
+                <div class="plano pro">
+                    <h3>Plano Pro</h3>
+                    <p>Mais popular</p>
+                    <p class="preco">R$49/mês</p>
+                    <ul>
+                        <li>Monitoramento veterinário</li>
+                        <li>Compartilhamento ilimitado</li>
+                        <li>Suporte prioritário</li>
+                    </ul>
+                    <a href="#" class="btn destaque">Contratar</a>
+                </div>
+
+                <div class="plano premium">
+                    <h3>Plano Premium</h3>
+                    <p>Recursos avançados</p>
+                    <p class="preco">R$99/mês</p>
+                    <ul>
+                        <li>Consultas online</li>
+                        <li>Relatórios detalhados</li>
+                        <li>Suporte 24h</li>
+                    </ul>
+                <a href="#" class="btn">Contratar</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 PetSpace. Todos os direitos reservados.</p>
+            <nav class="footer-nav">
+            <a href="#planos">Planos</a>
+            <a href="#consultas">Consultas</a>
+            <a href="#equipe">Equipe</a>
+            <a href="#">Política de Privacidade</a>            
+            </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
+    <script src="js/carrosel_circular.js"></script>
+</body>
+</html>
