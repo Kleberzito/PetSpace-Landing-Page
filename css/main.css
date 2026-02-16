@@ -41,7 +41,6 @@ img {
     --cor-texto-secundario: #555555;
     --cor-texto-default: #fff;
     --cor-complementar: #06D6A0;
-    --cor-complementar-secundaria: #FF6B6B;
 
     --default-height: 1920px;
 }
@@ -80,19 +79,23 @@ header {
     font-weight: bold;
     color: var(--cor-texto-principal);
 }
+
 nav {
     flex: 1;
     text-align: center;
 }
+
 nav a {
     margin: 0 20px;
     text-decoration: none;
     color: var(--cor-texto-principal);
     font-weight: 500;
 }
+
 .actions {
     margin-right: 220px;
 }
+
 .btn {
     background-color: var(--cor-primaria);
     color: var(--cor-texto-default);
@@ -104,6 +107,11 @@ nav a {
     align-items: center;
     gap: 8px;
 }
+
+.btn:hover {
+  background-color: var(--cor-secundaria);
+}
+
 .btn-login i {
     font-style: normal;
     font-size: 1.2em;
